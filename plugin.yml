@@ -1,0 +1,47 @@
+name: RandomWarp
+main: com.tehelee.randomWarp.Main
+version: 1.10.2b
+
+commands:
+  randomwarp:
+    description: set the random warp range
+    usage: /randomwarp
+    permission: permissions.randomwarp.range
+    aliases: [randwarp, rw]
+    
+permissions:
+  permissions.randomwarp.*:
+    description: Gives access to all RandomWarp commands
+    default: op
+    children:
+      permissions.randomwarp.config: true
+      permissions.randomwarp.create: true
+      permissions.randomwarp.silent: true
+      permissions.randomwarp.immunity: true
+      permissions.randomwarp.force: true
+      permissions.randomwarp.remote: true
+      permissions.randomwarp.use: true
+  permissions.randomwarp.reload:
+    description: Allows you to reload the RandomWarp plugin
+    default: op
+  permissions.randomwarp.config:
+    description: Allows you to configure the RandomWarp
+    default: op
+  permissions.randomwarp.create:
+    description: Allows you to create RandomWarp signs
+    default: op
+  permissions.randomwarp.silent:
+    description: Allows you to use RandomWarp silently
+    default: op
+  permissions.randomwarp.immunity:
+    description: Players with this permission cannot be punted
+    default: op
+  permissions.randomwarp.force:
+    description: Allows you to RandomWarp other players
+    default: op
+  permissions.randomwarp.remote:
+    description: Allows you to RandomWarp by command
+    default: op
+  permissions.randomwarp.use:
+    description: Allows you to use RandomWarp signs
+    default: true
